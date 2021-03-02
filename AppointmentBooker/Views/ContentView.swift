@@ -8,9 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            
+            List(timeSlots) { slot in
+                
+                RowView(time: slot)
+                
+            }
+            
+//            Button() {
+//
+//            }
+//        
+        }.navigationTitle("Choose your time slot")
+        
     }
 }
 
