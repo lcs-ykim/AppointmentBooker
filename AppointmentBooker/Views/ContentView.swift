@@ -10,21 +10,25 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        VStack {
-            
-            List(timeSlots) { slot in
+        
+        NavigationView {
+            Group {
                 
-                RowView(time: slot)
-                
+                if googleDelegate.signedIn {
+                    
+                    TableView()
+                    
+                } else {
+                    
+                    SignInView()
+                    
+                }
             }
-            
-//            Button() {
-//
-//            }
-//        
-        }.navigationTitle("Choose your time slot")
+        }
+        
         
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
