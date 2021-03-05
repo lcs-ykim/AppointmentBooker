@@ -11,21 +11,8 @@ struct ContentView: View {
     
     var body: some View {
         
-        NavigationView {
-            Group {
-                
-                if googleDelegate.signedIn {
-                    
-                    TableView()
-                    
-                } else {
-                    
-                    SignInView()
-                    
-                }
-            }
-        }
-        
+        Text("Hello, world!")
+                   .padding()
         
     }
     

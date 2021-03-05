@@ -20,11 +20,12 @@ struct TableView: View {
                     }
                 }
             }
+            // Submit button
+            Button() {
+                return timeIndex
         }
     }
     
-    // A function that allows
-    func submit() {
         
     }
 }
