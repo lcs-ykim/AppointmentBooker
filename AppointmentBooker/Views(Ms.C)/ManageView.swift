@@ -14,7 +14,7 @@ struct ManageView: View {
     var body: some View {
         VStack {
             
-            List(timeSlots) { slot in
+            List(testData) { slot in
                 
                 RowView(time: slot)
                 

@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct RowView: View {
+    
+    // Controls whether the add task view is showing
+    @State private var showingRequest = false
+    
     var time: Time
 
     var body: some View {
         
         HStack {
-            
-            time.availability ? Text("✅")
-                .font(.largeTitle) : Text("🚫")
             
             VStack(alignment: .leading) {
                 
@@ -25,6 +26,16 @@ struct RowView: View {
                 Text(time.time)
                     .font(.caption)
             }
+            
+            Image(systemName: "chevron.right")
+                .onTapGesture {
+                    
+                    showingRequest = true
+                    
+                }
+                .sheet(isPresented: $showingRequest) {
+                    RequestView(time: time, showing: $showingRequest)
+                }
         
         }
         
@@ -33,6 +44,6 @@ struct RowView: View {
 
 struct RowView_Previews: PreviewProvider {
     static var previews: some View {
-        RowView(time: timeSlots[0])
+        RowView(time: testData[0])
     }
 }

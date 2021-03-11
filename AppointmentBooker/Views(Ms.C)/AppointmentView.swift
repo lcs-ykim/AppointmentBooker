@@ -14,14 +14,10 @@ struct AppointmentView: View {
     var body: some View {
         VStack {
             
-            List(timeSlots) { slot in
+            List(testStore.times) { slot in
                 
                 RowView(time: slot)
                 
-            }
-            
-            Button() {
-
             }
 
         }.navigationTitle("Confirm appointment with the student.")

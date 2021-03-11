@@ -15,4 +15,4 @@ class TimeStore: ObservableObject {
     }
 }
 
-let timeStore = TimeStore(times: timeSlots)
+let testStore = TimeStore(times: testData)

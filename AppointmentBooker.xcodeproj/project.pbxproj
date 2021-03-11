@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7F16EBDA25EFEF560039C697 /* Google Sign-in in Resources */ = {isa = PBXBuildFile; fileRef = 7F16EBD925EFEF560039C697 /* Google Sign-in */; };
-		7F16EBE025EFF21A0039C697 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16EBDF25EFF21A0039C697 /* TableView.swift */; };
 		7F16EBE425EFF3520039C697 /* AboutMeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16EBE325EFF3520039C697 /* AboutMeView.swift */; };
 		7F16EBE825EFF4270039C697 /* CompletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16EBE725EFF4270039C697 /* CompletionView.swift */; };
 		7F16EBEC25EFF59E0039C697 /* AppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16EBEB25EFF59E0039C697 /* AppointmentView.swift */; };
 		7F16EBEF25EFF95F0039C697 /* ManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16EBEE25EFF95F0039C697 /* ManageView.swift */; };
 		7F16EC2125F29F0B0039C697 /* TimeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16EC2025F29F0B0039C697 /* TimeStore.swift */; };
+		7F16EC2F25FA5D6A0039C697 /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16EC2E25FA5D6A0039C697 /* BookingView.swift */; };
+		7F16EC3325FA60FA0039C697 /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16EC3225FA60FA0039C697 /* RequestView.swift */; };
 		7F45124125EEC722000AB38B /* AppointmentBookerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F45124025EEC722000AB38B /* AppointmentBookerApp.swift */; };
 		7F45124325EEC722000AB38B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F45124225EEC722000AB38B /* ContentView.swift */; };
 		7F45124525EEC726000AB38B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F45124425EEC726000AB38B /* Assets.xcassets */; };
@@ -24,12 +25,13 @@
 
 /* Begin PBXFileReference section */
 		7F16EBD925EFEF560039C697 /* Google Sign-in */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Google Sign-in"; sourceTree = "<group>"; };
-		7F16EBDF25EFF21A0039C697 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		7F16EBE325EFF3520039C697 /* AboutMeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeView.swift; sourceTree = "<group>"; };
 		7F16EBE725EFF4270039C697 /* CompletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionView.swift; sourceTree = "<group>"; };
 		7F16EBEB25EFF59E0039C697 /* AppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentView.swift; sourceTree = "<group>"; };
 		7F16EBEE25EFF95F0039C697 /* ManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageView.swift; sourceTree = "<group>"; };
 		7F16EC2025F29F0B0039C697 /* TimeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStore.swift; sourceTree = "<group>"; };
+		7F16EC2E25FA5D6A0039C697 /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
+		7F16EC3225FA60FA0039C697 /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
 		7F45123D25EEC722000AB38B /* AppointmentBooker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppointmentBooker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F45124025EEC722000AB38B /* AppointmentBookerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentBookerApp.swift; sourceTree = "<group>"; };
 		7F45124225EEC722000AB38B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,16 @@
 			path = "Views(Ms.C)";
 			sourceTree = "<group>";
 		};
+		7F16EC2D25FA5D050039C697 /* Views(Students) */ = {
+			isa = PBXGroup;
+			children = (
+				7F16EC2E25FA5D6A0039C697 /* BookingView.swift */,
+				7F16EC3225FA60FA0039C697 /* RequestView.swift */,
+				7F16EBE725EFF4270039C697 /* CompletionView.swift */,
+			);
+			path = "Views(Students)";
+			sourceTree = "<group>";
+		};
 		7F45123425EEC722000AB38B = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +94,7 @@
 				7F45124025EEC722000AB38B /* AppointmentBookerApp.swift */,
 				7F45125125EEC9AD000AB38B /* Models */,
 				7F45125025EEC9A8000AB38B /* Views */,
+				7F16EC2D25FA5D050039C697 /* Views(Students) */,
 				7F16EBE625EFF3F10039C697 /* Views(Ms.C) */,
 				7F45124425EEC726000AB38B /* Assets.xcassets */,
 				7F16EBD925EFEF560039C697 /* Google Sign-in */,
@@ -104,9 +117,7 @@
 			children = (
 				7F45124225EEC722000AB38B /* ContentView.swift */,
 				7F45125E25EECCC9000AB38B /* RowView.swift */,
-				7F16EBDF25EFF21A0039C697 /* TableView.swift */,
 				7F16EBE325EFF3520039C697 /* AboutMeView.swift */,
-				7F16EBE725EFF4270039C697 /* CompletionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,9 +205,10 @@
 				7F45125725EECC0A000AB38B /* Time.swift in Sources */,
 				7F16EC2125F29F0B0039C697 /* TimeStore.swift in Sources */,
 				7F45125F25EECCC9000AB38B /* RowView.swift in Sources */,
+				7F16EC2F25FA5D6A0039C697 /* BookingView.swift in Sources */,
 				7F45124325EEC722000AB38B /* ContentView.swift in Sources */,
-				7F16EBE025EFF21A0039C697 /* TableView.swift in Sources */,
 				7F16EBE425EFF3520039C697 /* AboutMeView.swift in Sources */,
+				7F16EC3325FA60FA0039C697 /* RequestView.swift in Sources */,
 				7F16EBE825EFF4270039C697 /* CompletionView.swift in Sources */,
 				7F45124125EEC722000AB38B /* AppointmentBookerApp.swift in Sources */,
 				7F16EBEF25EFF95F0039C697 /* ManageView.swift in Sources */,
