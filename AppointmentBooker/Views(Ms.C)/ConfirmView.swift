@@ -27,7 +27,7 @@ struct ConfirmView: View {
                     
                 }
             }
-            .navigationTitle("Confirming Appointment")
+            .navigationTitle("Accepting request")
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
                     Button("Confirm") {
@@ -40,9 +40,10 @@ struct ConfirmView: View {
         }
     }
     
-    // Sends request to Ms.Cosgrove
+    // Confirm request
     func sendConfirm() {
         
+        // Sends confirmation message to student
         
         
         // Dismiss the view
