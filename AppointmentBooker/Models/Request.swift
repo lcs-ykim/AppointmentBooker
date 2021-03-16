@@ -9,6 +9,7 @@ import Foundation
 
 // Possible values of RequestStatus
 enum RequestStatus {
+    case unsent
     case sent
     case denied
     case accepted
@@ -27,3 +28,8 @@ class Request: Identifiable, ObservableObject {
     }
     
 }
+
+let testRequest = [Request(time: Time(date: "03/02",
+                                                 time: "14:00 - 15:00",
+                                                 availability: true),
+                                      status: RequestStatus.unsent)]
