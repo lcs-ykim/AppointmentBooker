@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CompletionView: View {
     var body: some View {
-        Text("Your request has been sent! You'll get an confirmation email soon.")
+        Text("Your request has been sent! You'll get confirmation soon.")
     }
 }
 

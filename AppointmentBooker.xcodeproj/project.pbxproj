@@ -11,7 +11,6 @@
 		7F16EBE425EFF3520039C697 /* AboutMeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16EBE325EFF3520039C697 /* AboutMeView.swift */; };
 		7F16EBE825EFF4270039C697 /* CompletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16EBE725EFF4270039C697 /* CompletionView.swift */; };
 		7F16EBEC25EFF59E0039C697 /* AppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16EBEB25EFF59E0039C697 /* AppointmentView.swift */; };
-		7F16EBEF25EFF95F0039C697 /* ManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16EBEE25EFF95F0039C697 /* ManageView.swift */; };
 		7F16EC2125F29F0B0039C697 /* TimeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16EC2025F29F0B0039C697 /* TimeStore.swift */; };
 		7F16EC2F25FA5D6A0039C697 /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16EC2E25FA5D6A0039C697 /* BookingView.swift */; };
 		7F16EC3325FA60FA0039C697 /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16EC3225FA60FA0039C697 /* RequestView.swift */; };
@@ -21,6 +20,9 @@
 		7F45124825EEC726000AB38B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F45124725EEC726000AB38B /* Preview Assets.xcassets */; };
 		7F45125725EECC0A000AB38B /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F45125625EECC0A000AB38B /* Time.swift */; };
 		7F45125F25EECCC9000AB38B /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F45125E25EECCC9000AB38B /* RowView.swift */; };
+		7FFACA0B25FFBAEF00A3B8A1 /* RowViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFACA0A25FFBAEF00A3B8A1 /* RowViewC.swift */; };
+		7FFACA0E25FFBB9100A3B8A1 /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFACA0D25FFBB9100A3B8A1 /* ConfirmView.swift */; };
+		7FFACA1325FFBDA800A3B8A1 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFACA1225FFBDA800A3B8A1 /* ScheduleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +30,6 @@
 		7F16EBE325EFF3520039C697 /* AboutMeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeView.swift; sourceTree = "<group>"; };
 		7F16EBE725EFF4270039C697 /* CompletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionView.swift; sourceTree = "<group>"; };
 		7F16EBEB25EFF59E0039C697 /* AppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentView.swift; sourceTree = "<group>"; };
-		7F16EBEE25EFF95F0039C697 /* ManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageView.swift; sourceTree = "<group>"; };
 		7F16EC2025F29F0B0039C697 /* TimeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStore.swift; sourceTree = "<group>"; };
 		7F16EC2E25FA5D6A0039C697 /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
 		7F16EC3225FA60FA0039C697 /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
@@ -40,6 +41,9 @@
 		7F45124925EEC726000AB38B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F45125625EECC0A000AB38B /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		7F45125E25EECCC9000AB38B /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		7FFACA0A25FFBAEF00A3B8A1 /* RowViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowViewC.swift; sourceTree = "<group>"; };
+		7FFACA0D25FFBB9100A3B8A1 /* ConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
+		7FFACA1225FFBDA800A3B8A1 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,9 @@
 		7F16EBE625EFF3F10039C697 /* Views(Ms.C) */ = {
 			isa = PBXGroup;
 			children = (
+				7FFACA0A25FFBAEF00A3B8A1 /* RowViewC.swift */,
 				7F16EBEB25EFF59E0039C697 /* AppointmentView.swift */,
-				7F16EBEE25EFF95F0039C697 /* ManageView.swift */,
+				7FFACA0D25FFBB9100A3B8A1 /* ConfirmView.swift */,
 			);
 			path = "Views(Ms.C)";
 			sourceTree = "<group>";
@@ -65,9 +70,11 @@
 		7F16EC2D25FA5D050039C697 /* Views(Students) */ = {
 			isa = PBXGroup;
 			children = (
+				7F45125E25EECCC9000AB38B /* RowView.swift */,
 				7F16EC2E25FA5D6A0039C697 /* BookingView.swift */,
 				7F16EC3225FA60FA0039C697 /* RequestView.swift */,
 				7F16EBE725EFF4270039C697 /* CompletionView.swift */,
+				7FFACA1225FFBDA800A3B8A1 /* ScheduleView.swift */,
 			);
 			path = "Views(Students)";
 			sourceTree = "<group>";
@@ -116,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				7F45124225EEC722000AB38B /* ContentView.swift */,
-				7F45125E25EECCC9000AB38B /* RowView.swift */,
 				7F16EBE325EFF3520039C697 /* AboutMeView.swift */,
 			);
 			path = Views;
@@ -204,14 +210,16 @@
 				7F16EBEC25EFF59E0039C697 /* AppointmentView.swift in Sources */,
 				7F45125725EECC0A000AB38B /* Time.swift in Sources */,
 				7F16EC2125F29F0B0039C697 /* TimeStore.swift in Sources */,
+				7FFACA1325FFBDA800A3B8A1 /* ScheduleView.swift in Sources */,
 				7F45125F25EECCC9000AB38B /* RowView.swift in Sources */,
 				7F16EC2F25FA5D6A0039C697 /* BookingView.swift in Sources */,
+				7FFACA0E25FFBB9100A3B8A1 /* ConfirmView.swift in Sources */,
 				7F45124325EEC722000AB38B /* ContentView.swift in Sources */,
 				7F16EBE425EFF3520039C697 /* AboutMeView.swift in Sources */,
+				7FFACA0B25FFBAEF00A3B8A1 /* RowViewC.swift in Sources */,
 				7F16EC3325FA60FA0039C697 /* RequestView.swift in Sources */,
 				7F16EBE825EFF4270039C697 /* CompletionView.swift in Sources */,
 				7F45124125EEC722000AB38B /* AppointmentBookerApp.swift in Sources */,
-				7F16EBEF25EFF95F0039C697 /* ManageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

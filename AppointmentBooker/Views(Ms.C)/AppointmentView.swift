@@ -9,18 +9,20 @@ import SwiftUI
 
 struct AppointmentView: View {
     
-    @State private var timeIndex = 0
+    // Stores all tasks that are being tracked
+    @ObservedObject var store: TimeStore
+    
     
     var body: some View {
         VStack {
             
-            List(testStore.times) { slot in
+            List(store.times) { slot in
                 
-                RowView(time: slot)
+                RowViewC(time: slot)
                 
             }
 
-        }.navigationTitle("Confirm appointment with the student.")
+        }.navigationTitle("Confirm Appointment")
         
     }
     
@@ -28,6 +30,6 @@ struct AppointmentView: View {
 
 struct AppointmentView_Previews: PreviewProvider {
     static var previews: some View {
-        AppointmentView()
+        AppointmentView(store: testStore)
     }
 }

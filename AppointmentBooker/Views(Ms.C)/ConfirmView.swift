@@ -1,13 +1,13 @@
 //
-//  RequestView.swift
+//  ConfirmView.swift
 //  AppointmentBooker
 //
-//  Created by Yeseo Kim on 2021-03-11.
+//  Created by Yeseo Kim on 2021-03-15.
 //
 
 import SwiftUI
 
-struct RequestView: View {
+struct ConfirmView: View {
     
     @ObservedObject var time: Time
     
@@ -23,16 +23,16 @@ struct RequestView: View {
                     
                     Text("Appointment at \(time.date) \(time.time)")
                     
-                    TextField("Notes to Ms.Cosgrove", text: $note)
+                    TextField("Notes to Student", text: $note)
                     
                 }
             }
-            .navigationTitle("Sending Request")
+            .navigationTitle("Confirming Appointment")
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
-                    Button("Send") {
+                    Button("Confirm") {
                         
-                        sendRequest()
+                        sendConfirm()
                         
                     }
                 }
@@ -41,17 +41,17 @@ struct RequestView: View {
     }
     
     // Sends request to Ms.Cosgrove
-    func sendRequest() {
+    func sendConfirm() {
         
-        time.requested = true
+        
         
         // Dismiss the view
         showing = false
     }
 }
 
-struct RequestView_Previews: PreviewProvider {
+struct ConfirmView_Previews: PreviewProvider {
     static var previews: some View {
-        RequestView(time: testData[0], showing: .constant(true))
+        ConfirmView(time: testData[0], showing: .constant(true))
     }
 }
