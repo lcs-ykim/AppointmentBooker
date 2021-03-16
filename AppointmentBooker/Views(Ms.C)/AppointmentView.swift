@@ -22,7 +22,8 @@ struct AppointmentView: View {
                 
             }
 
-        }.navigationTitle("Confirm Appointment")
+        }
+        .navigationTitle("Confirm Appointment")
         
     }
     

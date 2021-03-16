@@ -31,5 +31,5 @@ class Request: Identifiable, ObservableObject {
 
 let testRequest = [Request(time: Time(date: "03/02",
                                                  time: "14:00 - 15:00",
-                                                 availability: true),
+                                                 availability: available),
                                       status: RequestStatus.unsent)]

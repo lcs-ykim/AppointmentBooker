@@ -43,8 +43,11 @@ struct ConfirmView: View {
     // Confirm request
     func sendConfirm() {
         
-        // Sends confirmation message to student
         request.status = RequestStatus.accepted
+        request.time.availability = availability.unavailable
+        
+        // Sends confirmation to student
+        
         
         // Dismiss the view
         showing = false

@@ -43,6 +43,10 @@ struct RequestView: View {
     // Sends request to Ms.Cosgrove
     func sendRequest() {
         
+        time.availability = availability.requested
+        
+        // Sends request
+        
         // Dismiss the view
         showing = false
     }
