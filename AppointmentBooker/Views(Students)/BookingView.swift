@@ -16,11 +16,18 @@ struct BookingView: View {
     @State private var showingAddTask = false
     
     var body: some View {
-        List(store.times) { slot in
-            RowView(time: slot)
-        }
-        .navigationTitle("Book Appointment")
         
+        NavigationView {
+            Form {
+                
+                    List(store.times) { slot in
+                        RowView(time: slot)
+                    }
+                
+            }
+            .navigationBarTitle("Choose time of your choice", displayMode: .inline)
+            
+        }
     }
 }
 

@@ -14,16 +14,20 @@ struct AppointmentView: View {
     
     
     var body: some View {
-        VStack {
-            
-            List(store.requests) { request in
+        
+        NavigationView {
+            Form {
                 
-                RowViewC(request: request)
-                
-            }
+                List(store.requests) { request in
+                    
+                    RowViewC(request: request)
+                    
+                }
 
+            }
+            .navigationBarTitle("Current Student Requests", displayMode: .inline)
+            
         }
-        .navigationTitle("Confirm Appointment")
         
     }
     

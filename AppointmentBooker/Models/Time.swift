@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Possible values of availability
 enum availability {
     case available
     case requested
@@ -31,10 +32,10 @@ class Time: Identifiable, ObservableObject {
 
 let testData = [Time(date: "03/02",
                       time: "14:00 - 15:00",
-                      availability: available),
+                      availability: availability.available),
                  Time(date: "03/03",
                       time: "14:00 - 15:00",
-                      availability: available),
+                      availability: availability.available),
                  Time(date: "03/04",
                       time: "14:00 - 15:00",
-                      availability: available)]
+                      availability: availability.available)]
