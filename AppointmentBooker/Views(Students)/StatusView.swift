@@ -15,19 +15,24 @@ struct StatusView: View {
         NavigationView {
             Form {
                 
-                Section {
+                Section(header: Text("Date and Time")) {
                     
-                    Text("\(request.time.date) \(request.time.time)")
+                    Text("\(request.time.date)")
+                    Text("\(request.time.time)")
+                                        
+                }
+                
+                Section(header: Text("Status")) {
                     
-                    Text("\(request.status)")
-                    
+                    Text("\(request.status.rawValue)")
+
                 }
                 
                 }
-                
+                .navigationBarTitle("Request Status", displayMode: .inline)
+
             }
-            .navigationBarTitle("Request Status", displayMode: .inline)
-            
+        
         }
     }
 
