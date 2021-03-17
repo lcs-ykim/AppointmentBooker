@@ -27,6 +27,7 @@ struct RowView: View {
                     .font(.caption)
             }
             
+            
             Image(systemName: "chevron.right")
                 .onTapGesture {
                     

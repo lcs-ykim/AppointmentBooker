@@ -8,13 +8,31 @@
 import SwiftUI
 
 struct StatusView: View {
+    
+    var request: Request
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Form {
+                
+                Section {
+                    
+                    Text("\(request.time.date) \(request.time.time)")
+                    
+                    Text("\(request.status)")
+                    
+                }
+                
+                }
+                
+            }
+            .navigationBarTitle("Request Status", displayMode: .inline)
+            
+        }
     }
-}
 
 struct StatusView_Previews: PreviewProvider {
     static var previews: some View {
-        StatusView()
+        StatusView(request: testRequest[0])
     }
 }

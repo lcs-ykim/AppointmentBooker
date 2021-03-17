@@ -8,11 +8,11 @@
 import Foundation
 
 // Possible values of RequestStatus
-enum RequestStatus {
-    case unsent
-    case sent
-    case denied
-    case accepted
+enum RequestStatus: String {
+    case unsent = "unsent"
+    case sent = "sent"
+    case denied = "denied"
+    case accepted = "accepted"
 }
 
 class Request: Identifiable, ObservableObject {
@@ -32,4 +32,12 @@ class Request: Identifiable, ObservableObject {
 let testRequest = [Request(time: Time(date: "03/02",
                                                  time: "14:00 - 15:00",
                                                  availability: availability.available),
-                                      status: RequestStatus.unsent)]
+                                      status: RequestStatus.unsent),
+                   Request(time: Time(date: "03/03",
+                                                                    time: "14:00 - 15:00",
+                                                                    availability: availability.available),
+                                                         status: RequestStatus.unsent),
+                   Request(time: Time(date: "03/04",
+                                                                    time: "14:00 - 15:00",
+                                                                    availability: availability.available),
+                                                         status: RequestStatus.unsent)]
