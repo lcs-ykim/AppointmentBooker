@@ -7,12 +7,8 @@
 
 import Foundation
 
-class TimeStore: ObservableObject {
-    @Published var times : [Time]
+struct TimeStore: Codable {
     
-    init(times: [Time] = []) {
-        self.times = times
-    }
+    var list : [Time] = []
+    
 }
-
-let testStore = TimeStore(times: testData)

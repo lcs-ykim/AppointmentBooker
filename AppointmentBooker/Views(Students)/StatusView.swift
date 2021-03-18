@@ -7,9 +7,11 @@
 
 import SwiftUI
 
+// StatusView will be shown when the student has made a request
+
 struct StatusView: View {
     
-    var request: Request
+    var time: Time
     
     var body: some View {
         NavigationView {
@@ -17,14 +19,14 @@ struct StatusView: View {
                 
                 Section(header: Text("Date and Time")) {
                     
-                    Text("\(request.time.date)")
-                    Text("\(request.time.time)")
+                    Text("\(time.date)")
+                    Text("\(time.time)")
                                         
                 }
                 
                 Section(header: Text("Status")) {
                     
-                    Text("\(request.status.rawValue)")
+                    Text("sent")
 
                 }
                 
@@ -38,6 +40,6 @@ struct StatusView: View {
 
 struct StatusView_Previews: PreviewProvider {
     static var previews: some View {
-        StatusView(request: testRequest[0])
+        StatusView(time: testStore.times.list[0])
     }
 }

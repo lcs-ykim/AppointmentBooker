@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ConfirmView: View {
     
-    @ObservedObject var request: Request
+    var time: Time
     
     @State private var note = ""
     
@@ -21,7 +21,7 @@ struct ConfirmView: View {
             VStack {
                 Form {
                     
-                    Text("Appointment at \(request.time.date) \(request.time.time)")
+                    Text("Appointment at \(time.date) \(time.time)")
                     
                     TextField("Notes to Student", text: $note)
                     
@@ -43,9 +43,6 @@ struct ConfirmView: View {
     // Confirm request
     func sendConfirm() {
         
-        request.status = RequestStatus.accepted
-        request.time.availability = availability.unavailable
-        
         // Sends confirmation to student
         
         
@@ -56,6 +53,6 @@ struct ConfirmView: View {
 
 struct ConfirmView_Previews: PreviewProvider {
     static var previews: some View {
-        ConfirmView(request: testRequest[0], showing: .constant(true))
+        ConfirmView(time: testStore.times.list[0], showing: .constant(true))
     }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RequestView: View {
     
-    @ObservedObject var time: Time
+    var time: Time
     
     @State private var note = ""
     
@@ -43,17 +43,19 @@ struct RequestView: View {
     // Sends request to Ms.Cosgrove
     func sendRequest() {
         
-        time.availability = availability.requested
+        // Assign student name to time slot
         
         // Sends request
         
         // Dismiss the view
         showing = false
+        
+        StatusView(time: time)
     }
 }
 
 struct RequestView_Previews: PreviewProvider {
     static var previews: some View {
-        RequestView(time: testData[0], showing: .constant(true))
+        RequestView(time: testStore.times.list[0], showing: .constant(true))
     }
 }

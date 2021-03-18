@@ -9,9 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     
+    // MARK: Stored properties
+    @StateObject private var store = Store()
+
+    // MARK: Computed properties
     var body: some View {
         
-        BookingView(store: testStore)
+        BookingView(store: store)
         
     }
     

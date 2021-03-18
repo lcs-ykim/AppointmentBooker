@@ -10,8 +10,7 @@ import SwiftUI
 @main
 struct AppointmentBookerApp: App {
     
-    @StateObject private var store = TimeStore(times: testData)
-
+    // MARK: Computed properties
     var body: some Scene {
         WindowGroup {
             ContentView()

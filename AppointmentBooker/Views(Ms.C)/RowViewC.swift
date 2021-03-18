@@ -15,7 +15,7 @@ struct RowViewC: View {
     // Controls whether the alert is showing
     @State private var showingAlert = false
     
-    var request: Request
+    var time: Time
         
     var body: some View {
         
@@ -23,10 +23,10 @@ struct RowViewC: View {
             
             VStack(alignment: .leading) {
                 
-                Text(request.time.date)
+                Text(time.date)
                     .fontWeight(.bold)
                 
-                Text(request.time.time)
+                Text(time.time)
                     .font(.caption)
             }
             
@@ -39,7 +39,7 @@ struct RowViewC: View {
                         
                     }
                     .sheet(isPresented: $showingConfirm) {
-                        ConfirmView(request: request, showing: $showingConfirm)
+                        ConfirmView(time: time, showing: $showingConfirm)
                     }
                 
                 Image(systemName: "xmark.circle")
@@ -50,7 +50,9 @@ struct RowViewC: View {
                     }
                     .alert(isPresented: $showingAlert) {
                         Alert(title: Text("Denying Request"), message: Text("Are you sure you want to deny?"), primaryButton: .default(Text("Yes")) {
-                            request.status = RequestStatus.denied
+                            
+                            // Sends notification to student
+                            
                         },
                         secondaryButton: .cancel(Text("No")))
                         
@@ -65,6 +67,6 @@ struct RowViewC: View {
 
 struct RowViewC_Previews: PreviewProvider {
     static var previews: some View {
-        RowViewC(request: testRequest[0])
+        RowViewC(time: testStore.times.list[0])
     }
 }

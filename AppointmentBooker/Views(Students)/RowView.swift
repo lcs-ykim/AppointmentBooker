@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RowView: View {
     
-    // Controls whether the add task view is showing
+    // Controls whether the RequestView is showing
     @State private var showingRequest = false
     
     var time: Time
@@ -45,6 +45,6 @@ struct RowView: View {
 
 struct RowView_Previews: PreviewProvider {
     static var previews: some View {
-        RowView(time: testData[0])
+        RowView(time: testStore.TimeStore.list[0])
     }
 }

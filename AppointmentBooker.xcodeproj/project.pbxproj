@@ -21,9 +21,9 @@
 		7F45125F25EECCC9000AB38B /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F45125E25EECCC9000AB38B /* RowView.swift */; };
 		7FFACA0B25FFBAEF00A3B8A1 /* RowViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFACA0A25FFBAEF00A3B8A1 /* RowViewC.swift */; };
 		7FFACA0E25FFBB9100A3B8A1 /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFACA0D25FFBB9100A3B8A1 /* ConfirmView.swift */; };
-		7FFACA1826012B3C00A3B8A1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFACA1726012B3C00A3B8A1 /* Request.swift */; };
-		7FFACA1C26012FDB00A3B8A1 /* RequestStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFACA1B26012FDB00A3B8A1 /* RequestStore.swift */; };
 		7FFACA2226013AE800A3B8A1 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFACA2126013AE800A3B8A1 /* StatusView.swift */; };
+		7FFACA27260263A000A3B8A1 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFACA26260263A000A3B8A1 /* ScheduleView.swift */; };
+		7FFACA352603894B00A3B8A1 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFACA342603894B00A3B8A1 /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,9 +43,9 @@
 		7F45125E25EECCC9000AB38B /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		7FFACA0A25FFBAEF00A3B8A1 /* RowViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowViewC.swift; sourceTree = "<group>"; };
 		7FFACA0D25FFBB9100A3B8A1 /* ConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
-		7FFACA1726012B3C00A3B8A1 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		7FFACA1B26012FDB00A3B8A1 /* RequestStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestStore.swift; sourceTree = "<group>"; };
 		7FFACA2126013AE800A3B8A1 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		7FFACA26260263A000A3B8A1 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		7FFACA342603894B00A3B8A1 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +65,7 @@
 				7FFACA0A25FFBAEF00A3B8A1 /* RowViewC.swift */,
 				7F16EBEB25EFF59E0039C697 /* AppointmentView.swift */,
 				7FFACA0D25FFBB9100A3B8A1 /* ConfirmView.swift */,
+				7FFACA26260263A000A3B8A1 /* ScheduleView.swift */,
 			);
 			path = "Views(Ms.C)";
 			sourceTree = "<group>";
@@ -132,10 +133,9 @@
 		7F45125125EEC9AD000AB38B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7F45125625EECC0A000AB38B /* Time.swift */,
+				7FFACA342603894B00A3B8A1 /* Store.swift */,
 				7F16EC2025F29F0B0039C697 /* TimeStore.swift */,
-				7FFACA1726012B3C00A3B8A1 /* Request.swift */,
-				7FFACA1B26012FDB00A3B8A1 /* RequestStore.swift */,
+				7F45125625EECC0A000AB38B /* Time.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,13 +211,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F16EBEC25EFF59E0039C697 /* AppointmentView.swift in Sources */,
-				7FFACA1826012B3C00A3B8A1 /* Request.swift in Sources */,
 				7F45125725EECC0A000AB38B /* Time.swift in Sources */,
+				7FFACA352603894B00A3B8A1 /* Store.swift in Sources */,
 				7F16EC2125F29F0B0039C697 /* TimeStore.swift in Sources */,
 				7FFACA2226013AE800A3B8A1 /* StatusView.swift in Sources */,
+				7FFACA27260263A000A3B8A1 /* ScheduleView.swift in Sources */,
 				7F45125F25EECCC9000AB38B /* RowView.swift in Sources */,
 				7F16EC2F25FA5D6A0039C697 /* BookingView.swift in Sources */,
-				7FFACA1C26012FDB00A3B8A1 /* RequestStore.swift in Sources */,
 				7FFACA0E25FFBB9100A3B8A1 /* ConfirmView.swift in Sources */,
 				7F45124325EEC722000AB38B /* ContentView.swift in Sources */,
 				7F16EBE425EFF3520039C697 /* AboutMeView.swift in Sources */,

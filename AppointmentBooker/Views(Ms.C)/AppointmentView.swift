@@ -10,7 +10,7 @@ import SwiftUI
 struct AppointmentView: View {
     
     // Stores all tasks that are being tracked
-    @ObservedObject var store: RequestStore
+    @ObservedObject var store: Store
     
     
     var body: some View {
@@ -18,9 +18,9 @@ struct AppointmentView: View {
         NavigationView {
             Form {
                 
-                List(store.requests) { request in
+                List(store.times.list) { time in
                     
-                    RowViewC(request: request)
+                    RowViewC(time: time)
                     
                 }
 
@@ -35,6 +35,6 @@ struct AppointmentView: View {
 
 struct AppointmentView_Previews: PreviewProvider {
     static var previews: some View {
-        AppointmentView(store: testRequestStore)
+        AppointmentView(store: testStore)
     }
 }

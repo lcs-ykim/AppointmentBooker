@@ -9,19 +9,16 @@ import SwiftUI
 
 struct BookingView: View {
     
-    // Stores all tasks that are being tracked
-    @ObservedObject var store: TimeStore
-    
-    // Controls whether the add task view is showing
-    @State private var showingAddTask = false
+    // Stores all times that are being tracked
+    @ObservedObject var store: Store
     
     var body: some View {
         
         NavigationView {
             Form {
                 
-                    List(store.times) { slot in
-                        RowView(time: slot)
+                List(store.times.list) { time in
+                        RowView(time: time)
                     }
                 
             }
