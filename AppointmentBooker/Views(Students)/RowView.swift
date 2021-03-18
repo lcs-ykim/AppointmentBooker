@@ -45,6 +45,6 @@ struct RowView: View {
 
 struct RowView_Previews: PreviewProvider {
     static var previews: some View {
-        RowView(time: testStore.TimeStore.list[0])
+        RowView(time: testStore.times.list[0])
     }
 }
