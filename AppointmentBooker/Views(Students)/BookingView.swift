@@ -17,16 +17,23 @@ struct BookingView: View {
         NavigationView {
             Form {
                 
-                List(store.times.list) { time in
-                        RowView(time: time)
-                    }
+                List(store.times.list.filter({ row in
+                    return row.personBooked == "none"
+                    
+                })) { time in
+
+                    RowView(time: time)
+                    
+                }
                 
             }
             .navigationBarTitle("Choose time of your choice", displayMode: .inline)
-            
+
         }
+        
     }
 }
+
 
 struct BookingView_Previews: PreviewProvider {
     static var previews: some View {

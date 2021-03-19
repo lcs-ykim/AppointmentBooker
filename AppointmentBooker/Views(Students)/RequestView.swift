@@ -45,12 +45,13 @@ struct RequestView: View {
         
         // Assign student name to time slot
         
+        
         // Sends request
+        
         
         // Dismiss the view
         showing = false
         
-        StatusView(time: time)
     }
 }
 

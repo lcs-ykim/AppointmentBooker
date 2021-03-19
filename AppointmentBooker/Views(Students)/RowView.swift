@@ -13,7 +13,7 @@ struct RowView: View {
     @State private var showingRequest = false
     
     var time: Time
-
+    
     var body: some View {
         
         HStack {
@@ -37,11 +37,13 @@ struct RowView: View {
                 .sheet(isPresented: $showingRequest) {
                     RequestView(time: time, showing: $showingRequest)
                 }
-        
+            
         }
         
     }
+    
 }
+
 
 struct RowView_Previews: PreviewProvider {
     static var previews: some View {
