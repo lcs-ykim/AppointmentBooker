@@ -13,30 +13,42 @@ struct RequestView: View {
     
     @State private var note = ""
     
-    // Whether to show this view
+    // Controls whether to show this view
     @Binding var showing: Bool
+    
+    // Controls whether to show StatusView
+    @State private var isShowingStatusView = false
     
     var body: some View {
         NavigationView {
-            VStack {
-                Form {
+            
+                VStack {
                     
-                    Text("Appointment at \(time.date) \(time.time)")
-                    
-                    TextField("Notes to Ms.Cosgrove", text: $note)
-                    
-                }
-            }
-            .navigationTitle("Sending Request")
-            .toolbar {
-                ToolbarItem(placement: .primaryAction) {
-                    Button("Send") {
+                    Form {
                         
+                        Text("Appointment at \(time.date) \(time.time)")
+                        
+                        TextField("Notes to Ms.Cosgrove", text: $note)
+                    }
+                    
+                    Button("Send") {
+                    
                         sendRequest()
                         
                     }
+                                    
                 }
-            }
+                .navigationTitle("Sending Request")
+                .toolbar {
+                    ToolbarItem(placement: .primaryAction) {
+                        Button("Send") {
+                            
+                            sendRequest()
+                            
+                        }
+                    }
+                }
+            
         }
     }
     
@@ -47,8 +59,7 @@ struct RequestView: View {
         
         
         // Sends request
-        
-        
+                
         // Dismiss the view
         showing = false
         

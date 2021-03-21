@@ -18,7 +18,7 @@ struct BookingView: View {
             Form {
                 
                 List(store.times.list.filter({ row in
-                    return row.personBooked == "none"
+                    return row.personBooked == "none" // filter out time slots that are occupied
                     
                 })) { time in
 

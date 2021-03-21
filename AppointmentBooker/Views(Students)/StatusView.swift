@@ -13,6 +13,9 @@ struct StatusView: View {
     
     var time: Time
     
+    // Controls whether to show this view
+    @Binding var showing: Bool
+
     var body: some View {
         NavigationView {
             Form {
@@ -40,6 +43,6 @@ struct StatusView: View {
 
 struct StatusView_Previews: PreviewProvider {
     static var previews: some View {
-        StatusView(time: testStore.times.list[0])
+        StatusView(time: testStore.times.list[0], showing: .constant(true))
     }
 }
